@@ -1,0 +1,38 @@
+@media only screen and (min-width: 992px) {
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 44px;
+    }
+
+    #logo {
+        width: 61px;
+        height: 19px;
+        padding-left: 5px;
+    }
+
+    #selectFilter {
+        display: flex;
+    }
+
+    #filterClic {
+        display: flex;
+        align-items: center;
+    }
+
+    .filterTxt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        display: flex;
+        border-radius: 50px;
+        justify-content: space-between;
+        border: solid var(--grey);
+        border-left: 0px;
+    }
+
+    .filterTxt>p {
+        font-size: 13px;
+    }
+}
