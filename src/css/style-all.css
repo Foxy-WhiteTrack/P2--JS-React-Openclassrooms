@@ -5,10 +5,6 @@
     --lightWhite: #DEEBFF;
     --lightGrey: #F2F2F2;
     --lightDarkGrey: darkgrey;
-
-    --lightBlue: #0065FC;
-    --lightWhite: #DEEBFF;
-    --lightGrey: #F2F2F2;
 }
 
 * {
@@ -18,7 +14,12 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'raleway', Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    max-width: 1400px;
+    margin: auto;
 }
 
 /* Listes et liens */
@@ -44,6 +45,11 @@ ul {
     font-size: 10px;
 }
 
+.filterIcon i {
+    color: var(--lightBlue);
+    margin-right: 10px;
+}
+
 /* ******************** VERSION ALL end ******************** */
 
 
@@ -67,9 +73,6 @@ ul {
     /* ID */
 
     /* Navigation Bar start */
-    #barnav {
-        display: flex;
-    }
 
     #nav {
         display: flex;
@@ -123,6 +126,10 @@ ul {
         color: white;
         font-size: 16px;
         padding: 15px;
+    }
+
+    #searchBtn i {
+        display: none;
     }
 
     #searchIpt {
@@ -212,10 +219,7 @@ ul {
         justify-content: space-between;
     }
 
-    .filterIcon i {
-        color: var(--lightBlue);
-        margin-right: 10px;
-    }
+
 
     .filterTxt>p {
         font-size: 13px;
@@ -400,7 +404,7 @@ ul {
     .activities-part {
         border-radius: 15px;
         box-shadow: 1px 1px 13px var(--lightGrey);
-        height: 445px;
+        height: 410px;
         border: 2px solid var(--lightGrey);
     }
 
@@ -412,6 +416,9 @@ ul {
         border-radius: 15px 15px 0px 0px;
         width: 100%;
         height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: center 30%;
     }
 
     .activities-part_title {
@@ -439,6 +446,7 @@ ul {
 
     .bold {
         font-size: 18px;
+        font-weight: bold;
     }
 
     .bold+li,
@@ -458,6 +466,154 @@ ul {
 
 
 /* ******************** VERSION MOBILE start ******************** */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 767px) {
+
+    /* tags */
+    body {
+        margin-top: 21px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Navigation */
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #nav {
+        width: 100%;
+        display: flex;
+    }
+
+    #nav a {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        padding-bottom: 10px;
+        border-bottom: solid 3px var(--lightGrey);
+        margin-left: 0px;
+        padding-top: 15px;
+    }
+
+    #nav a:hover {
+        color: var(--lightBlue);
+        border-bottom: solid 3px var(--lightBlue);
+        border-top: none;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+        margin-left: 150px;
+
+    }
+
+    /* Titles */
+
+    #titles {
+        margin-left: 20px;
+    }
+
+    #title h1 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    #title p {
+        font-size: 16px;
+    }
+
+    /* Filter */
+
+    #searchIpt {
+        border-right: none;
+        width: 70%;
+    }
+
+    #searchBtn {
+        border-radius: 20%;
+        font-size: 20px;
+    }
+
+    #searchBtn span {
+        display: none;
+    }
+
+    #localisation {
+        background-color: var(--lightGrey);
+        width: 49px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30% 0 0 30%;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+
+    #searching {
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #searchBtn {
+        background-color: #0065FC;
+        font-weight: bold;
+        border: 0;
+        border-radius: 0px 15px 15px 0px;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    #searchIpt {
+        padding: 16px;
+        border: 1px solid var(--lightGrey);
+    }
+
+    #filter {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        display: block;
+    }
+
+    #filterClic ul {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    #selectFilter {
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filterTxt {
+        border-radius: 50px;
+        border: solid var(--lightGrey);
+        padding: 10px 20px;
+        margin: 0 10px 35px 0;
+        justify-content: space-between;
+        border-left: 0px;
+    }
+
+    /* Most Popular */
+
+    /* Lodging */
+
+    /* Activities */
+
+
+}
 
 /* ******************** VERSION MOBILE end ******************** */

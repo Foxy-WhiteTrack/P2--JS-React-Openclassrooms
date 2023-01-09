@@ -6,9 +6,6 @@
 -------------------------------------------------------
 ## Elements à faire:
 
-- Gérer l'affichage des conteneurs
-- Intégration du conteneur "Activités à Marseille"
-- Inplémentation du footer
 - Mise en place du responsive design
 - Vérification de la qualité du code
 -------------------------------------------------------
@@ -22,6 +19,9 @@
 - Réalisation des card "Hébergements à Marseille"
 - Réalisation de la card "Les plus populaire"
 - Apprendre à mettre en place un live-server sans VSCode ni Xampp
+- Gérer l'affichage des conteneurs
+- Intégration du conteneur "Activités à Marseille"
+- Inplémentation du footer
 
 -------------------------------------------------------
 
