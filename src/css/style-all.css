@@ -342,9 +342,9 @@ ul {
 
     .popular-title {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
-        width: 60%;
+        width: 100%;
     }
 
     .popularImg img {
@@ -365,7 +365,7 @@ ul {
     }
 
     .popular-title>h3 {
-        font-size: 13px;
+        font-size: 22px;
         margin-bottom: 10px;
         font-weight: bolder;
     }
@@ -383,6 +383,70 @@ ul {
     }
 
     /* Most Popular end */
+
+    /* Activities start */
+
+    #bodyActivities {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 61px;
+    }
+
+    #bodyActivities>* {
+        width: 20%;
+    }
+
+
+    .activities-part {
+        border-radius: 15px;
+        box-shadow: 1px 1px 13px var(--lightGrey);
+        height: 445px;
+        border: 2px solid var(--lightGrey);
+    }
+
+    .activitiesImg {
+        height: 85%;
+    }
+
+    .activitiesImg img {
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .activities-part_title {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    /* Activities end */
+
+    /* Footer start */
+
+    footer {
+        background-color: var(--lightGrey);
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footerPart {
+        margin-right: 13%;
+    }
+
+    .footerPart>ul>li {
+        margin-bottom: 10%;
+    }
+
+    .bold {
+        font-size: 18px;
+    }
+
+    .bold+li,
+    li {
+        font-size: 16px;
+    }
+
+    /* Footer end */
 }
 
 /* ******************** VERSION DESKTOP end ******************** */

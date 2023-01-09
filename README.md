@@ -21,6 +21,7 @@
 - Ajout de la partie filter
 - Réalisation des card "Hébergements à Marseille"
 - Réalisation de la card "Les plus populaire"
+- Apprendre à mettre en place un live-server sans VSCode ni Xampp
 
 -------------------------------------------------------
 
