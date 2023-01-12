@@ -16,8 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;0,600;1,100&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <!--*****FAVICON*****-->
 
@@ -26,19 +27,19 @@
 <body>
     <main>
         <header>
-            <section>
-                <nav id="barnav">
+            <section id="barnav">
+                <nav>
                     <div id="logoContainer">
                         <a href="index.html"><img id="logo" src="images/Booki.png" alt="Booki, logo du site"></a>
                     </div>
                     <div id="nav">
-                        <a href="#hebergements">Hébergements</a>
-                        <a href="#activites">Activités</a>
+                        <a href="#lodging">Hébergements</a>
+                        <a href="#activities">Activités</a>
                     </div>
                 </nav>
             </section>
         </header>
-        <section id="titles">
+        <section id="titles" class="margeS">
             <div id="title">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p id="slogan">En plein centre ville ou en pleine nature</p>
@@ -46,7 +47,7 @@
         </section>
 
 
-        <section id="filter">
+        <section id="filter" class="margeS">
             <form method="get" id="searching">
                 <div id="localisation">
                     <i class="fas fa-map-marker-alt"></i>
@@ -58,51 +59,43 @@
                 <h4>Filtres</h4>
                 <ul id="selectFilter">
                     <li class="filterTxt">
-                        <div class="filterIcon"><i class="fas fa-money-bill-wave"></i>
-                            <div href="#">Economique</div>
-                        </div>
-
+                        <i class="fas fa-money-bill-wave"></i>
+                        <div class="filTx" href="#">Economique</div>
                     </li>
                     <li class="filterTxt">
-                        <div class="filterIcon"><i class="fas fa-child"></i>
-                            <div href="#">Familial</div>
-                        </div>
-
+                        <i class="fas fa-child"></i>
+                        <div class="filTx" href="#">Familial</div>
                     </li>
                     <li class="filterTxt">
-                        <div class="filterIcon"><i class="fas fa-heart"></i>
-                            <div href="#">Romantique</div>
-                        </div>
-
+                        <i class="fas fa-heart"></i>
+                        <div class="filTx" href="#">Romantique</div>
                     </li>
                     <li class="filterTxt">
-                        <div class="filterIcon"><i class="fas fa-dog"></i>
-                            <div href="#">Animaux autorisés</div>
-                        </div>
-
+                        <i class="fas fa-dog"></i>
+                        <div class="filTx" href="#">Animaux autorisés</div>
                     </li>
                 </ul>
             </div>
-
-            <div>
-                <div id="info">
-                    <div id="infoIcon"><i class="fas fa-info Info"></i><span>Plus de 500 logements sont disponibles dans
-                            cette ville</span></div>
-                </div>
+        </section>
+        <section class="margeS">
+            <div id="info">
+                <div id="infoIcon"><i class="fas fa-info Info"></i><span>Plus de 500 logements sont disponibles dans
+                        cette ville</span></div>
+            </div>
         </section>
 
         <!-- Hébergements à marseille -->
         <div id="lodging">
-            <section id="lodging-part">
+            <section id="lodging-part" class="margeS">
                 <div class="titleLodging">
-                    <h3>Hébergements à Marseille</h3>
+                    <h2>Hébergements à Marseille</h2>
                 </div>
                 <div class="lodging-container2">
                     <!-- lodging card 1 -->
-                    <div class="lodging-card">
+                    <a class="lodging-card">
                         <article class="lodging-articles">
                             <div class="cardImg">
-                                <img class="pictures" src="images/AubergeLaCanebiere.jpg"
+                                <img class="img pictures" src="images/AubergeLaCanebiere.jpg"
                                     alt="Photos d'hébergements à marseille">
                             </div>
                             <div class="cardInfos">
@@ -117,12 +110,12 @@
                                 </div>
                             </div>
                         </article>
-                    </div>
+                    </a>
                     <!-- lodging card 2 -->
-                    <div class="lodging-card">
+                    <a class="lodging-card">
                         <article class="lodging-articles">
                             <div class="cardImg">
-                                <img class="pictures" src="images/AubergeLaCanebiere.jpg"
+                                <img class="img pictures" src="images/AubergeLaCanebiere.jpg"
                                     alt="Photos d'herbegements à marseille">
                             </div>
                             <div class="cardInfos">
@@ -137,12 +130,12 @@
                                 </div>
                             </div>
                         </article>
-                    </div>
+                    </a>
                     <!-- lodging card 3 -->
-                    <div class="lodging-card">
+                    <a class="lodging-card">
                         <article class="lodging-articles">
                             <div class="cardImg">
-                                <img class="pictures" src="images/AubergeLaCanebiere.jpg"
+                                <img class="img pictures" src="images/AubergeLaCanebiere.jpg"
                                     alt="Photos d'herbegements à marseille">
                             </div>
                             <div class="cardInfos">
@@ -157,12 +150,12 @@
                                 </div>
                             </div>
                         </article>
-                    </div>
+                    </a>
                     <!-- lodging card 4 -->
-                    <div class="lodging-card">
+                    <a class="lodging-card">
                         <article class="lodging-articles">
                             <div class="cardImg">
-                                <img class="pictures" src="images/AubergeLaCanebiere.jpg"
+                                <img class="img pictures" src="images/AubergeLaCanebiere.jpg"
                                     alt="Photos d'herbegements à marseille">
                             </div>
                             <div class="cardInfos">
@@ -177,12 +170,12 @@
                                 </div>
                             </div>
                         </article>
-                    </div>
+                    </a>
                     <!-- lodging card 5 -->
-                    <div class="lodging-card">
+                    <a class="lodging-card">
                         <article class="lodging-articles">
                             <div class="cardImg">
-                                <img class="pictures" src="images/AubergeLaCanebiere.jpg"
+                                <img class="img pictures" src="images/AubergeLaCanebiere.jpg"
                                     alt="Photos d'herbegements à marseille">
                             </div>
                             <div class="cardInfos">
@@ -197,12 +190,12 @@
                                 </div>
                             </div>
                         </article>
-                    </div>
+                    </a>
                     <!-- lodging card 6 -->
-                    <div class="lodging-card">
+                    <a class="lodging-card">
                         <article class="lodging-articles">
                             <div class="cardImg">
-                                <img class="pictures" src="images/AubergeLaCanebiere.jpg"
+                                <img class="img pictures" src="images/AubergeLaCanebiere.jpg"
                                     alt="Photos d'herbegements à marseille">
                             </div>
                             <div class="cardInfos">
@@ -217,21 +210,21 @@
                                 </div>
                             </div>
                         </article>
-                    </div>
+                    </a>
                 </div>
                 <div class="showMore"><a href="#">Afficher plus</a></div>
             </section>
 
             <!-- Most Popular -->
-            <section id="popular">
+            <section id="popular" class="marge">
                 <div class="popular-title">
-                    <h3>Les plus populaires </h3><i class="fas fa-chart-line"></i>
+                    <h2>Les plus populaires </h2><i class="fas fa-chart-line blue"></i>
                 </div>
                 <div class="popular2">
-                    <div class="card-pop">
+                    <a class="card-pop">
                         <article class="popular-article">
                             <div class="popularImg">
-                                <img class="pictures2" src="images/HotelLeSoleilDuMatin.jpg"
+                                <img class="img pictures2" src="images/HotelLeSoleilDuMatin.jpg"
                                     alt="Photos d'herbegements à marseille">
                             </div>
                             <div class="starText">
@@ -248,66 +241,64 @@
                                 </div>
                             </div>
                         </article>
-                    </div>
-                    <div class="card-pop">
+                    </a>
+                    <a class="card-pop">
                         <article class="popular-article">
                             <div class="popularImg">
-                                <img class="pictures2" src="images/HotelLeSoleilDuMatin.jpg"
+                                <img class="img pictures2" src="images/HotelLeSoleilDuMatin.jpg"
                                     alt="Photos d'herbegements à marseille">
                             </div>
                             <div class="starText">
                                 <div class="popular-titleBody">
-                                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                                    <p class="cardInfos_txt">Nuit à partir de 71<i class="fas fa-euro-sign"></i></p>
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p class="cardInfos_txt">Nuit à partir de 128<i class="fas fa-euro-sign"></i></p>
                                 </div>
                                 <div class="star">
                                     <i class="fas fa-star blue"></i>
                                     <i class="fas fa-star blue"></i>
                                     <i class="fas fa-star blue"></i>
                                     <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star gray"></i>
+                                    <i class="fas fa-star blue"></i>
                                 </div>
                             </div>
                         </article>
-                    </div>
-                    <div class="card-pop">
+                    </a>
+                    <a class="card-pop">
                         <article class="popular-article">
                             <div class="popularImg">
-                                <img class="pictures2" src="images/HotelLeSoleilDuMatin.jpg"
+                                <img class="img pictures2" src="images/HotelLeSoleilDuMatin.jpg"
                                     alt="Photos d'herbegements à marseille">
                             </div>
                             <div class="starText">
                                 <div class="popular-titleBody">
-                                    <h3>Hôtel Tout bleu et Blanc</h3>
-                                    <p class="cardInfos_txt">Nuit à partir de 68<i class="fas fa-euro-sign"></i></p>
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p class="cardInfos_txt">Nuit à partir de 128<i class="fas fa-euro-sign"></i></p>
                                 </div>
                                 <div class="star">
                                     <i class="fas fa-star blue"></i>
                                     <i class="fas fa-star blue"></i>
                                     <i class="fas fa-star blue"></i>
                                     <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star gray"></i>
+                                    <i class="fas fa-star blue"></i>
                                 </div>
                             </div>
                         </article>
-                    </div>
+                    </a>
                 </div>
             </section>
         </div>
         </div>
 
-        <section id="activities">
-            <div id="title_activities">
-                <h3 id="title_activities_h3">Activités à Marseille</h3>
+        <section id="activities" class="margeS">
+            <div id=" title_activities">
+                <h2 id="title_activities_h3">Activités à Marseille</h2>
             </div>
-
             <div id="bodyActivities">
 
                 <!--***** Vieux Port START *****-->
                 <div class="activities-part">
-                    <div class="activitiesImg">
-                        <img src="images/small/VieuxPort.jpg" alt="Photos d'herbegements à marseille">
-                    </div>
+                    <img class="img activitiesImg" src="images/small/VieuxPort.jpg"
+                        alt="Photos d'herbegements à marseille">
                     <div class="activities-part_title">
                         <h3>Vieux port</h3>
                     </div>
@@ -315,9 +306,8 @@
                 <!--***** Hotel le soleil du matin END *****-->
                 <!--***** Vieux Port START *****-->
                 <div class="activities-part">
-                    <div class="activitiesImg">
-                        <img src="images/small/VieuxPort.jpg" alt="Photos d'herbegements à marseille">
-                    </div>
+                    <img class="img activitiesImg" src="images/small/VieuxPort.jpg"
+                        alt="Photos d'herbegements à marseille">
                     <div class="activities-part_title">
                         <h3>Vieux port</h3>
                     </div>
@@ -325,9 +315,8 @@
                 <!--***** Hotel le soleil du matin END *****-->
                 <!--***** Vieux Port START *****-->
                 <div class="activities-part">
-                    <div class="activitiesImg">
-                        <img src="images/small/VieuxPort.jpg" alt="Photos d'herbegements à marseille">
-                    </div>
+                    <img class="img activitiesImg" src="images/small/VieuxPort.jpg"
+                        alt="Photos d'herbegements à marseille">
                     <div class="activities-part_title">
                         <h3>Vieux port</h3>
                     </div>
@@ -335,9 +324,8 @@
                 <!--***** Hotel le soleil du matin END *****-->
                 <!--***** Vieux Port START *****-->
                 <div class="activities-part">
-                    <div class="activitiesImg">
-                        <img src="images/small/VieuxPort.jpg" alt="Photos d'herbegements à marseille">
-                    </div>
+                    <img class="img activitiesImg" src="images/small/VieuxPort.jpg"
+                        alt="Photos d'herbegements à marseille">
                     <div class="activities-part_title">
                         <h3>Vieux port</h3>
                     </div>
@@ -349,34 +337,35 @@
 
         <section id="container-footer">
             <footer>
-                <div class="footerPart">
-                    <ul>
-                        <li class="bold">A propos</li>
-                        <li>Fonctionnement du site</li>
-                        <li>Conditions générales de vente</li>
-                        <li>Données et confidentialité</li>
-                    </ul>
-                </div>
-                <div class="footerPart">
-                    <ul>
-                        <li class="bold">Nos hébergement</li>
-                        <li>Charte qualité</li>
-                        <li>Soumettre votre hôtel</li>
-                    </ul>
-                </div>
-                <div class="footerPart">
-                    <ul>
-                        <li class="bold">Assistance</li>
-                        <li>Centre d'aide</li>
-                        <li>Nous contacter</li>
-                    </ul>
+                <div>
+                    <div class="footerPart">
+                        <ul>
+                            <li class="bold">A propos</li>
+                            <li class="txt-footer">Fonctionnement du site</li>
+                            <li class="txt-footer">Conditions générales de vente</li>
+                            <li class="txt-footer">Données et confidentialité</li>
+                        </ul>
+                    </div>
+                    <div class="footerPart">
+                        <ul>
+                            <li class="bold">Nos hébergement</li>
+                            <li class="txt-footer">Charte qualité</li>
+                            <li class="txt-footer">Soumettre votre hôtel</li>
+                        </ul>
+                    </div>
+                    <div class="footerPart">
+                        <ul>
+                            <li class="bold">Assistance</li>
+                            <li class="txt-footer">Centre d'aide</li>
+                            <li class="txt-footer">Nous contacter</li>
+                        </ul>
+                    </div>
                 </div>
             </footer>
         </section>
 
 
     </main>
-
 </body>
 
 </html>
