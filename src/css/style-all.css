@@ -98,6 +98,16 @@ ul {
 
     /* Navigation Bar start */
 
+    #barnav {
+        display: inline;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
     #nav {
         display: flex;
         justify-content: flex-end;
@@ -106,7 +116,7 @@ ul {
 
     #nav a {
         margin-left: 67px;
-        padding: 30px 15px 0 15px;
+        padding: 48px 15px 0 15px;
         border-top: solid 3px white;
     }
 
@@ -119,9 +129,20 @@ ul {
         width: 61px;
         height: 19px;
         padding-left: 5px;
+        margin-top: 44px;
     }
 
     /* Navigation Bar end */
+
+    #title h1 {
+        margin-top: 63px;
+    }
+
+    #title p {
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+
     /* Filter start */
     #localisation {
         background-color: var(--lightGrey);
@@ -138,7 +159,8 @@ ul {
     #searching {
         display: flex;
         align-items: center;
-        padding-bottom: 10px;
+        margin-bottom: 16px;
+        margin-top: 20px;
     }
 
     #searchBtn {
@@ -173,8 +195,8 @@ ul {
     /* Filter end */
     /* Infos start */
     #info {
-        margin-top: 34px;
-        margin-bottom: 39px;
+        margin-top: 24px;
+        margin-bottom: 34px;
     }
 
     #infoIcon i {
@@ -301,8 +323,8 @@ ul {
         padding-left: 27px;
     }
 
-    .titleLodging {
-        padding-top: 10px;
+    .titleLodging h2 {
+        margin-top: 42px;
     }
 
     .showMore {
@@ -439,6 +461,7 @@ ul {
     footer {
         background-color: var(--lightGrey);
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
     }
 
@@ -446,8 +469,12 @@ ul {
         margin-right: 13%;
     }
 
-    .footerPart>ul>li {
+    .footerPart ul li {
         margin-bottom: 10%;
+    }
+
+    .txt-footer:nth-child(1) {
+        margin-top: 30px;
     }
 
     .bold {
@@ -465,10 +492,6 @@ ul {
 
 /* ******************** VERSION DESKTOP end ******************** */
 
-/* ******************** VERSION TABLET start ******************** */
-@media only screen and (min-width: 768px) {}
-
-/* ******************** VERSION TABLET end ******************** */
 
 
 /* ******************** VERSION MOBILE start ******************** */
@@ -771,11 +794,13 @@ ul {
     /* Footer */
 
     footer {
-        flex-direction: column;
+        flex-direction: row;
         padding-top: 30px;
         background-color: var(--lightGrey);
         height: 377px;
     }
+
+
 
     .bold li {
         font-size: 13px;
@@ -786,6 +811,7 @@ ul {
         font-weight: 700;
         font-size: 18px;
         line-height: 21px;
+        margin-bottom: 20px;
     }
 
     .txt-footer {
@@ -796,3 +822,398 @@ ul {
 }
 
 /* ******************** VERSION MOBILE end ******************** */
+
+
+/* ******************** VERSION TABLET start ******************** */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* TAGS */
+
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    input::placeholder {
+        color: var(--lightDarkGrey);
+        font-weight: bolder;
+        font-size: 15px;
+    }
+
+    /* ID */
+
+    /* Navigation Bar start */
+
+    #nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    #nav a {
+        margin-left: 67px;
+        padding: 30px 15px 0 15px;
+        border-top: solid 3px white;
+    }
+
+    #nav a:hover {
+        color: var(--lightBlue);
+        border-top: solid 3px var(--lightBlue);
+    }
+
+    #logo {
+        width: 61px;
+        height: 19px;
+        padding-left: 5px;
+    }
+
+    /* Navigation Bar end */
+    /* Filter start */
+    #localisation {
+        background-color: var(--lightGrey);
+        width: 49px;
+        height: 50px;
+        border-radius: 15px 0px 0px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    #searching {
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    #searchBtn {
+        background-color: #0065FC;
+        font-weight: bold;
+        border: 0;
+        border-radius: 0px 15px 15px 0px;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    #searchBtn i {
+        display: none;
+    }
+
+    #searchIpt {
+        padding: 16px;
+        border: 1px solid var(--lightGrey);
+    }
+
+    #selectFilter {
+        display: flex;
+    }
+
+    #filterClic {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Filter end */
+    /* Infos start */
+    #info {
+        margin-top: 34px;
+        margin-bottom: 39px;
+    }
+
+    #infoIcon i {
+        font-size: 13px;
+        color: var(--lightBlue);
+        border: solid var(--lightGrey);
+        border-radius: 50%;
+        padding: 7px 10px 7px 10px;
+    }
+
+    #infoIcon span {
+        padding-left: 20px;
+    }
+
+    /* Infos end */
+
+    /* Lodging start */
+    #lodging-part {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--lightGrey);
+        border-radius: 15px;
+        flex: 7;
+        text-align: start;
+        height: 100%;
+    }
+
+    #lodging {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Lodging end */
+    /* Popular start */
+    #popular {
+        margin-top: 53px;
+        display: flex;
+        background-color: var(--lightGrey);
+        border-radius: 15px;
+        flex: 3;
+        padding-bottom: 20px;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Popular end */
+
+    /* CLASS */
+
+    /* Filter start */
+    .filterTxt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        display: flex;
+        border-radius: 50px;
+        justify-content: space-between;
+        border: solid var(--lightGrey);
+        border-left: 0px;
+        padding: 15px;
+    }
+
+    .filterTxt i {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    .filterTxt:hover {
+        background-color: var(--extralightBlue);
+    }
+
+    /* Filter end */
+
+    /* Lodging start */
+    .pictures {
+        width: 100%;
+        height: 110px;
+        border-radius: 25px 25px 0px 0px;
+        padding: 1px 4px 0px 4px;
+    }
+
+    .lodging-container2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .lodging-articles {
+        background-color: white;
+        height: 190px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    .lodging-card {
+        width: calc(100% / 3 - 31px);
+        height: calc(100% / 2 - 30px);
+    }
+
+    .cardImg img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .cardImg {
+        height: 60%;
+        width: 100%;
+    }
+
+    .cardInfos {
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        justify-content: space-evenly;
+    }
+
+    .showMore,
+    .titleLodging {
+        display: flex;
+        font-weight: bold;
+        text-align: justify;
+        padding-left: 27px;
+    }
+
+    .titleLodging {
+        padding-top: 10px;
+    }
+
+    .showMore {
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+
+    .showMore:hover {
+        color: var(--lightBlue);
+    }
+
+    .cardInfos>h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .cardInfos>p {
+        margin-bottom: 5px;
+    }
+
+    /* Lodging end */
+
+    /* Most Popular start */
+    .popular-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .popular-title>i {
+        font-size: 25px;
+    }
+
+    .popular-article {}
+
+    .popular2 {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+
+
+    .card-pop {
+        height: 33%;
+        width: 100%;
+    }
+
+    .popular-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .popularImg img {
+        border-radius: 15px 0 0 15px;
+    }
+
+    .popularImg {
+        width: 40%;
+    }
+
+    .starText {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        justify-content: space-between;
+        height: 100%;
+        width: 60%;
+    }
+
+    .popular-title>h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+    }
+
+    .cardInfos_txt {
+        font-size: 10px;
+    }
+
+    .pictures2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 25px 0px 0px 25px;
+        padding: 1px 4px 4px 4px;
+    }
+
+    /* Most Popular end */
+
+    /* Activities start */
+
+    #bodyActivities {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 61px;
+    }
+
+    #bodyActivities>* {
+        width: 20%;
+    }
+
+
+    .activities-part {
+        border-radius: 20px;
+        box-shadow: 1px 1px 13px var(--lightGrey);
+        height: calc(25% - 150px);
+        border: 2px solid var(--lightGrey);
+    }
+
+    .activitiesImg {
+        height: 85%;
+    }
+
+    .activitiesImg {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .activities-part_title {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    /* Activities end */
+
+    /* Footer start */
+
+    footer {
+        background-color: var(--lightGrey);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footerPart {
+        margin-right: 13%;
+    }
+
+    .footerPart ul li {
+        margin-bottom: 10%;
+    }
+
+    .txt-footer:nth-child(1) {
+        margin-top: 30px;
+    }
+
+    .bold {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .bold+li,
+    li {
+        font-size: 16px;
+    }
+
+    /* Footer end */
+}
+
+/* ******************** VERSION TABLET end ******************** */

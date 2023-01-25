@@ -10,6 +10,7 @@
     <meta name="author" content="Nancy Pontes">
     <meta name="country" content="France">
     <!--*****STYLES*****-->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style-all.css">
     <!--*****FONTS & ICONS*****-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +28,7 @@
 <body>
     <main>
         <header>
-            <section id="barnav">
+            <div id="barnav">
                 <nav>
                     <div id="logoContainer">
                         <a href="index.html"><img id="logo" src="images/Booki.png" alt="Booki, logo du site"></a>
@@ -37,7 +38,7 @@
                         <a href="#activities">Activités</a>
                     </div>
                 </nav>
-            </section>
+            </div>
         </header>
         <section id="titles" class="margeS">
             <div id="title">
@@ -60,29 +61,29 @@
                 <ul id="selectFilter">
                     <li class="filterTxt">
                         <i class="fas fa-money-bill-wave"></i>
-                        <div class="filTx" href="#">Economique</div>
+                        <div class="filTx">Economique</div>
                     </li>
                     <li class="filterTxt">
                         <i class="fas fa-child"></i>
-                        <div class="filTx" href="#">Familial</div>
+                        <div class="filTx">Familial</div>
                     </li>
                     <li class="filterTxt">
                         <i class="fas fa-heart"></i>
-                        <div class="filTx" href="#">Romantique</div>
+                        <div class="filTx">Romantique</div>
                     </li>
                     <li class="filterTxt">
                         <i class="fas fa-dog"></i>
-                        <div class="filTx" href="#">Animaux autorisés</div>
+                        <div class="filTx">Animaux autorisés</div>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="margeS">
+        <div class="margeS">
             <div id="info">
                 <div id="infoIcon"><i class="fas fa-info Info"></i><span>Plus de 500 logements sont disponibles dans
                         cette ville</span></div>
             </div>
-        </section>
+        </div>
 
         <!-- Hébergements à marseille -->
         <div id="lodging">
@@ -287,10 +288,9 @@
                 </div>
             </section>
         </div>
-        </div>
 
         <section id="activities" class="margeS">
-            <div id=" title_activities">
+            <div id="title_activities">
                 <h2 id="title_activities_h3">Activités à Marseille</h2>
             </div>
             <div id="bodyActivities">
@@ -335,34 +335,32 @@
             </div>
         </section>
 
-        <section id="container-footer">
+        <div id="container-footer">
             <footer>
-                <div>
-                    <div class="footerPart">
-                        <ul>
-                            <li class="bold">A propos</li>
-                            <li class="txt-footer">Fonctionnement du site</li>
-                            <li class="txt-footer">Conditions générales de vente</li>
-                            <li class="txt-footer">Données et confidentialité</li>
-                        </ul>
-                    </div>
-                    <div class="footerPart">
-                        <ul>
-                            <li class="bold">Nos hébergement</li>
-                            <li class="txt-footer">Charte qualité</li>
-                            <li class="txt-footer">Soumettre votre hôtel</li>
-                        </ul>
-                    </div>
-                    <div class="footerPart">
-                        <ul>
-                            <li class="bold">Assistance</li>
-                            <li class="txt-footer">Centre d'aide</li>
-                            <li class="txt-footer">Nous contacter</li>
-                        </ul>
-                    </div>
+                <div class="footerPart">
+                    <ul>
+                        <li class="bold">A propos</li>
+                        <li class="txt-footer">Fonctionnement du site</li>
+                        <li class="txt-footer">Conditions générales de vente</li>
+                        <li class="txt-footer">Données et confidentialité</li>
+                    </ul>
+                </div>
+                <div class="footerPart">
+                    <ul>
+                        <li class="bold">Nos hébergement</li>
+                        <li class="txt-footer">Charte qualité</li>
+                        <li class="txt-footer">Soumettre votre hôtel</li>
+                    </ul>
+                </div>
+                <div class="footerPart">
+                    <ul>
+                        <li class="bold">Assistance</li>
+                        <li class="txt-footer">Centre d'aide</li>
+                        <li class="txt-footer">Nous contacter</li>
+                    </ul>
                 </div>
             </footer>
-        </section>
+        </div>
 
 
     </main>
