@@ -6,7 +6,6 @@
 -------------------------------------------------------
 ## Elements à faire:
 
-- Mise en place du responsive design
 - Vérification de la qualité du code
 -------------------------------------------------------
 ## Elements déjà fait:
@@ -22,10 +21,4 @@
 - Gérer l'affichage des conteneurs
 - Intégration du conteneur "Activités à Marseille"
 - Inplémentation du footer
-
--------------------------------------------------------
-
-## Elements à faire si j'ai le temps en plus:
-
-- Favicon pour faire joli
-- Utiliser la methode BEM pour le CSS
+- Mise en place du responsive design
