@@ -6,7 +6,7 @@
 -------------------------------------------------------
 ## Elements à faire:
 
-- Vérification de la qualité du code
+
 -------------------------------------------------------
 ## Elements déjà fait:
 
@@ -22,3 +22,4 @@
 - Intégration du conteneur "Activités à Marseille"
 - Inplémentation du footer
 - Mise en place du responsive design
+- Vérification de la qualité du code
